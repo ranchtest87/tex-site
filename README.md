@@ -4,3 +4,230 @@ Tex currently serves as an Open Source Program Manager at Intersect MBO. Interse
 
 
 Tex aims to continue to grow in the world of Open Source with a focus on Open Source Leadership, Developer Experience and Relations, also effective and efficient program management. 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Apply Inter font to the entire body */
+        body {
+            font-family: 'Inter', sans-serif;
+            @apply bg-gray-50 text-gray-800;
+        }
+        /* Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+        .section-title {
+            @apply text-4xl font-bold text-gray-900 mb-8 pb-4 border-b-2 border-indigo-300;
+        }
+        .card {
+            @apply bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out;
+        }
+        .timeline-item {
+            @apply relative pl-8 pb-8;
+        }
+        .timeline-item::before {
+            content: '';
+            @apply absolute left-0 top-1/2 -translate-y-1/2 w-4 h-4 bg-indigo-500 rounded-full;
+        }
+        .timeline-item::after {
+            content: '';
+            @apply absolute left-1.5 top-0 w-0.5 h-full bg-indigo-200;
+        }
+        .timeline-item:last-child::after {
+            @apply h-1/2; /* Shorten line for the last item */
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Header and Navigation -->
+    <header class="bg-gradient-to-r from-indigo-600 to-purple-700 text-white shadow-lg py-4 px-6 md:px-12">
+        <nav class="container mx-auto flex flex-wrap justify-between items-center">
+            <a href="#" class="text-3xl font-extrabold rounded-md px-2 py-1 hover:bg-white hover:text-indigo-600 transition duration-300">My Portfolio</a>
+            <div class="flex flex-wrap space-x-4 md:space-x-8 mt-4 md:mt-0">
+                <a href="#events" class="text-lg font-medium hover:text-indigo-200 transition duration-300 rounded-md px-3 py-2">Events</a>
+                <a href="#history" class="text-lg font-medium hover:text-indigo-200 transition duration-300 rounded-md px-3 py-2">History</a>
+                <a href="#cv" class="text-lg font-medium hover:text-indigo-200 transition duration-300 rounded-md px-3 py-2">CV/Resume</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow container mx-auto px-4 py-12 md:py-16 space-y-20 md:space-y-24">
+
+        <!-- Recent Event Attendance Section -->
+        <section id="events" class="animate-fade-in">
+            <h2 class="section-title text-center">Recent Event Attendance</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Event 1 -->
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-2">Tech Innovation Summit 2024</h3>
+                    <p class="text-gray-600 text-sm mb-3">May 15-17, 2024 | San Francisco, CA</p>
+                    <p class="text-gray-700">Attended keynotes on AI advancements and participated in workshops on sustainable tech solutions. Networked with industry leaders and gained insights into future trends.</p>
+                    <ul class="list-disc list-inside text-sm text-gray-500 mt-4">
+                        <li>AI & Machine Learning Track</li>
+                        <li>Sustainable Tech Workshop</li>
+                        <li>Panel Discussion: Future of Work</li>
+                    </ul>
+                </div>
+                <!-- Event 2 -->
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-2">Global Digital Marketing Conference</h3>
+                    <p class="text-gray-600 text-sm mb-3">April 2-4, 2024 | Virtual Event</p>
+                    <p class="text-gray-700">Explored new strategies in content marketing and SEO. Engaged in live Q&A sessions with leading digital marketers worldwide.</p>
+                    <ul class="list-disc list-inside text-sm text-gray-500 mt-4">
+                        <li>SEO Masterclass</li>
+                        <li>Content Strategy Deep Dive</li>
+                        <li>Social Media Trends 2024</li>
+                    </ul>
+                </div>
+                <!-- Event 3 -->
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-2">Local Community Volunteer Day</h3>
+                    <p class="text-gray-600 text-sm mb-3">March 20, 2024 | City Park, Denver, CO</p>
+                    <p class="text-gray-700">Contributed to park clean-up and planting initiatives. A great opportunity to give back to the community and meet fellow volunteers.</p>
+                    <ul class="list-disc list-inside text-sm text-gray-500 mt-4">
+                        <li>Park beautification</li>
+                        <li>Community engagement</li>
+                        <li>Teamwork and collaboration</li>
+                    </ul>
+                </div>
+                <!-- Add more events as needed -->
+                <div class="card md:col-span-2 lg:col-span-1">
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-2">Data Science Symposium</h3>
+                    <p class="text-gray-600 text-sm mb-3">February 10, 2024 | University of Colorado, Boulder</p>
+                    <p class="text-gray-700">Attended a series of lectures and poster presentations on advanced statistical modeling and machine learning applications in various fields.</p>
+                    <ul class="list-disc list-inside text-sm text-gray-500 mt-4">
+                        <li>Predictive Analytics</li>
+                        <li>Big Data Processing</li>
+                        <li>Ethical AI Considerations</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- My History Section -->
+        <section id="history" class="animate-fade-in">
+            <h2 class="section-title text-center">My Journey & History</h2>
+            <div class="max-w-3xl mx-auto space-y-6">
+                <!-- History Item 1 -->
+                <div class="timeline-item card">
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-2">2020 - Present: Professional Role & Growth</h3>
+                    <p class="text-gray-700 mb-2">Currently working as a <span class="font-medium text-purple-600">Senior Software Engineer</span> at InnovateCorp, specializing in cloud-native applications and microservices architecture. Led a team of 5 engineers in developing a scalable payment processing system, resulting in a 20% increase in transaction efficiency.</p>
+                    <p class="text-gray-700">Key achievements include mentoring junior developers and successfully deploying critical features under tight deadlines.</p>
+                </div>
+                <!-- History Item 2 -->
+                <div class="timeline-item card">
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-2">2016 - 2020: Early Career & Foundations</h3>
+                    <p class="text-gray-700 mb-2">Started my career as a <span class="font-medium text-purple-600">Junior Developer</span> at TechSolutions Inc., focusing on front-end web development. Gained foundational skills in JavaScript, HTML, and CSS. Contributed to building interactive user interfaces for various client projects.</p>
+                    <p class="text-gray-700">Developed a passion for problem-solving and clean code practices during this period.</p>
+                </div>
+                <!-- History Item 3 -->
+                <div class="timeline-item card">
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-2">2012 - 2016: University & Academic Pursuits</h3>
+                    <p class="text-gray-700 mb-2">Graduated from <span class="font-medium text-purple-600">University of XYZ</span> with a Bachelor's degree in Computer Science. My coursework included data structures, algorithms, and software engineering principles.</p>
+                    <p class="text-gray-700">Active member of the Robotics Club and completed a capstone project on AI-powered recommendation systems.</p>
+                </div>
+                <!-- History Item 4 -->
+                <div class="timeline-item card">
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-2">Pre-2012: Early Life & Inspirations</h3>
+                    <p class="text-gray-700 mb-2">Developed an early interest in technology by tinkering with computers and building small applications. Participated in local coding competitions and always enjoyed dissecting how things work.</p>
+                    <p class="text-gray-700">This early curiosity laid the groundwork for my future career path.</p>
+                </div>
+                <!-- Add more history items as needed -->
+            </div>
+        </section>
+
+        <!-- Non-Standard CV/Resume Section -->
+        <section id="cv" class="animate-fade-in">
+            <h2 class="section-title text-center">My Capabilities & Contributions (Non-Standard CV)</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Skills & Expertise -->
+                <div class="card p-8">
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-4 flex items-center">
+                        <svg class="w-7 h-7 mr-2 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M16.364 16.364l.707.707M12 21v-1m-6.364-1.636l-.707-.707M3 12H4m1.636-6.364l.707-.707M9 11a3 3 0 11-6 0 3 3 0 016 0zm7 0a3 3 0 11-6 0 3 3 0 016 0zm7 0a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        Core Capabilities
+                    </h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Software Architecture & Design</h4>
+                            <p class="text-gray-700">Proficient in designing scalable, resilient, and maintainable software systems. Experienced in microservices, RESTful APIs, and event-driven architectures. Always striving for elegant solutions that prioritize long-term sustainability.</p>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">System Design</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Cloud Computing (AWS/GCP)</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Distributed Systems</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Full-Stack Development</h4>
+                            <p class="text-gray-700">A versatile developer equally comfortable with front-end frameworks (React, Vue) and back-end languages (Python, Node.js, Java). Capable of bringing concepts from ideation to production, ensuring robust and user-friendly applications.</p>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">React.js</span>
+                                <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Python (Django/Flask)</span>
+                                <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Node.js</span>
+                                <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Databases (SQL/NoSQL)</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Leadership & Mentorship</h4>
+                            <p class="text-gray-700">Passionate about fostering growth within teams. Experienced in leading small development teams, guiding project execution, and mentoring junior engineers to achieve their full potential. Believe in collaborative problem-solving and open communication.</p>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Team Leadership</span>
+                                <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Mentoring</span>
+                                <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Agile Methodologies</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Noteworthy Projects & Contributions -->
+                <div class="card p-8">
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-4 flex items-center">
+                        <svg class="w-7 h-7 mr-2 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L3 12l5.714-2.143L11 3z"></path></svg>
+                        Impactful Projects & Endeavors
+                    </h3>
+                    <div class="space-y-6">
+                        <!-- Project 1 -->
+                        <div class="border-b pb-4 last:border-b-0">
+                            <h4 class="font-bold text-gray-800">Scalable E-commerce Platform Re-architecture</h4>
+                            <p class="text-gray-700 text-sm mb-2">Designed and implemented a complete overhaul of an existing monolithic e-commerce system into a microservices-based architecture. This involved breaking down legacy code, establishing robust API contracts, and ensuring zero downtime during migration.</p>
+                            <p class="text-gray-600 text-sm">Key outcome: Reduced server costs by 30% and improved system response time by 45% under peak load. Enabled faster feature development and deployment cycles.</p>
+                        </div>
+                        <!-- Project 2 -->
+                        <div class="border-b pb-4 last:border-b-0">
+                            <h4 class="font-bold text-gray-800">Open Source Contribution: "DataViz Library"</h4>
+                            <p class="text-gray-700 text-sm mb-2">Contributed significantly to an open-source data visualization library. Developed new interactive chart types and optimized rendering performance for large datasets. Received commendation from project maintainers for code quality and detailed documentation.</p>
+                            <p class="text-gray-600 text-sm">Recognized for adding value to the community and enhancing the library's capabilities for broader adoption.</p>
+                        </div>
+                        <!-- Project 3 -->
+                        <div class="border-b pb-4 last:border-b-0">
+                            <h4 class="font-bold text-gray-800">Mentorship Program Lead</h4>
+                            <p class="text-gray-700 text-sm mb-2">Initiated and led a company-wide mentorship program for junior engineers. Developed curriculum, matched mentors with mentees, and facilitated regular workshops on career development and technical skills. Over 15 engineers successfully completed the inaugural program.</p>
+                            <p class="text-gray-600 text-sm">Aimed at cultivating a culture of continuous learning and knowledge sharing within the organization.</p>
+                        </div>
+                        <!-- Add more projects as needed -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 px-4 md:px-12 mt-auto">
+        <div class="container mx-auto text-center text-sm">
+            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+            <p class="mt-2">Designed with passion and code.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
